@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>밈 아카이브</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pretendard:wght@300;400;600;700&display=swap');
+
+        body {
+            margin: 0;
+            font-family: "Pretendard", sans-serif;
+            background: linear-gradient(135deg, #6e8efb, #a777e3);
+            overflow-x: hidden;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 60px 20px;
+            text-align: center;
+            color: white;
+        }
+
+        /* 제목 영역 */
+        h1 {
+            font-size: 88px;
+            font-weight: 700;
+            margin: 0;
+            letter-spacing: 3px;
+            text-shadow: 0 6px 20px rgba(0,0,0,0.25);
+        }
+
+        h2 {
+            margin-top: 15px;
+            font-size: 28px;
+            font-weight: 400;
+            opacity: 0.85;
+        }
+
+        /* 이미지 */
+        .header-img {
+            width: 80%;
+            max-width: 680px;
+            margin: 35px auto 50px auto;
+            display: block;
+            filter: drop-shadow(0px 4px 22px rgba(0,0,0,0.25));
+        }
+
+        /* 버튼 영역 */
+        .year-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+            padding-bottom: 50px;
+        }
+
+        .year-box {
+            width: 100%;
+            height: 145px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 34px;
+            font-weight: 600;
+            color: white;
+            text-decoration: none;
+
+            background: rgba(255, 255, 255, 0.18);
+            backdrop-filter: blur(14px);
+            -webkit-backdrop-filter: blur(14px);
+            border-radius: 18px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.25);
+            transition: 0.35s;
+        }
+
+        .year-box:hover {
+            transform: translateY(-12px) scale(1.05);
+            box-shadow: 0 18px 45px rgba(0,0,0,0.35);
+            background: rgba(255, 255, 255, 0.28);
+        }
+
+        footer {
+            margin-top: 70px;
+            padding-bottom: 50px;
+            opacity: 0.75;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>밈 아카이브</h1>
+    <h2>2020 ~ 2025년까지 밈 총정리</h2>
+
+    <img src="img/main.png" alt="밈 아카이브" class="header-img">
+
+    <div class="year-container">
+        <a href="2020.html" class="year-box">2020</a>
+        <a href="2021.html" class="year-box">2021</a>
+        <a href="2022.html" class="year-box">2022</a>
+        <a href="2023.html" class="year-box">2023</a>
+        <a href="2024.html" class="year-box">2024</a>
+        <a href="2025.html" class="year-box">2025</a>
+    </div>
+
+    <footer>
+        ⓒ Meme Archive 2020-2025
+    </footer>
+
+</div>
+
+</body>
+</html>

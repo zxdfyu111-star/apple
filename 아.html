@@ -1,0 +1,162 @@
+/* Meme Archive Homepage (React + Tailwind)
+   홈 화면 + 6개 연도별 진입 버튼을 가진 페이지
+*/
+import React from "react";
+import { Link } from "react-router-dom";
+
+export default function MemeArchiveHome() {
+  const years = [2020, 2021, 2022, 2023, 2024, 2025];
+
+  return (
+    <div className="min-h-screen bg-cover bg-center bg-no-repeat p-6 flex flex-col items-center"
+         style={{ backgroundImage: "url('https://picsum.photos/seed/memeBG/1600/900')" }}>
+      <div className="backdrop-blur-md bg-white/70 rounded-2xl p-10 mt-10 shadow-xl text-center max-w-3xl w-full">
+        <h1 className="text-5xl font-extrabold mb-4">밈 아카이브</h1>
+        <p className="text-xl text-gray-700 mb-10">2020년부터 2025년까지의 밈 총 정리</p>
+
+        <div className="grid grid-cols-2 sm:grid-cols-3 gap-6">
+          {years.map((y) => (
+            <Link
+              key={y}
+              to={`/${y}`}
+              className="bg-white/80 hover:bg-white rounded-xl shadow-md hover:shadow-xl transition p-6 text-2xl font-bold flex items-center justify-center border border-gray-200"
+            >
+              {y}
+            </Link>
+          ))}
+        </div>
+
+      </div>
+    </div>
+  );
+}
+
+
+/* 예시: 각 연도별 페이지 기본 템플릿 */
+export function YearPage({ year }) {
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-yellow-200 via-pink-200 to-purple-200 p-10 flex flex-col items-center">
+      <h1 className="text-4xl font-extrabold mb-4">{year}년 밈 모음</h1>
+      <p className="mb-6 text-gray-700">장난스럽고 귀여운 레이아웃을 원하는 곳에 추가 가능</p>
+
+      <Link to="/" className="px-6 py-3 bg-white rounded-xl shadow hover:shadow-lg text-lg font-semibold">
+        ← 홈으로 돌아가기
+      </Link>
+    </div>
+  );
+}
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<title>2020년 밈 아카이브</title>
+<style>
+ body {
+   background: url('https://i.imgur.com/5cQXG5X.jpeg');
+   background-size: cover;
+   font-family: sans-serif;
+ }
+ .container { backdrop-filter: blur(6px); background: rgba(255,255,255,0.6); padding: 20px; margin: 50px auto; width: 80%; border-radius: 20px; }
+ a { font-size: 20px; font-weight: bold; }
+</style>
+</head>
+<body>
+  <div class="container">
+    <h1>2020년 밈 아카이브</h1>
+    <p>여기에 2020년의 대표 밈들을 정리하세요.</p>
+    <a href="index.html">← 홈으로 돌아가기</a>
+  </div>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<title>2021년 밈 아카이브</title>
+<style>
+ body {
+   background: url('https://i.imgur.com/kRqXcED.jpeg');
+   background-size: cover;
+   font-family: sans-serif;
+ }
+ .container { backdrop-filter: blur(6px); background: rgba(255,255,255,0.6); padding: 20px; margin: 50px auto; width: 80%; border-radius: 20px; }
+ a { font-size: 20px; font-weight: bold; }
+</style>
+</head>
+<body>
+  <div class="container">
+    <h1>2021년 밈 아카이브</h1>
+    <p>여기에 2021년의 대표 밈들을 정리하세요.</p>
+    <a href="index.html">← 홈으로 돌아가기</a>
+  </div>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<title>2021년 밈 아카이브</title>
+<style>
+ body {
+   background: url('https://i.imgur.com/kRqXcED.jpeg');
+   background-size: cover;
+   font-family: sans-serif;
+ }
+ .container { backdrop-filter: blur(6px); background: rgba(255,255,255,0.6); padding: 20px; margin: 50px auto; width: 80%; border-radius: 20px; }
+ a { font-size: 20px; font-weight: bold; }
+</style>
+</head>
+<body>
+  <div class="container">
+    <h1>2021년 밈 아카이브</h1>
+    <p>여기에 2021년의 대표 밈들을 정리하세요.</p>
+    <a href="index.html">← 홈으로 돌아가기</a>
+  </div>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<title>2021년 밈 아카이브</title>
+<style>
+ body {
+   background: url('https://i.imgur.com/kRqXcED.jpeg');
+   background-size: cover;
+   font-family: sans-serif;
+ }
+ .container { backdrop-filter: blur(6px); background: rgba(255,255,255,0.6); padding: 20px; margin: 50px auto; width: 80%; border-radius: 20px; }
+ a { font-size: 20px; font-weight: bold; }
+</style>
+</head>
+<body>
+  <div class="container">
+    <h1>2021년 밈 아카이브</h1>
+    <p>여기에 2021년의 대표 밈들을 정리하세요.</p>
+    <a href="index.html">← 홈으로 돌아가기</a>
+  </div>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<title>2021년 밈 아카이브</title>
+<style>
+body {
+background: url('https://i.imgur.com/kRqXcED.jpeg');
+background-size: cover;
+font-family: sans-serif;
+}
+.container { backdrop-filter: blur(6px); background: rgba(255,255,255,0.6); padding: 20px; margin: 50px auto; width: 80%; border-radius: 20px; }
+a { font-size: 20px; font-weight: bold; }
+</style>
+</head>
+<body>
+<div class="container">
+<h1>2021년 밈 아카이브</h1>
+<p>여기에 2021년의 대표 밈들을 정리하세요.</p>
+<a href="index.html">← 홈으로 돌아가기</a>
+</div>
+</body>
+</html>
